@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cg3d Test</title>
+		<link rel="stylesheet" href="./libs/mocha.css">
+		<script src="./libs/mocha.js"></script>
+		<script>mocha.setup('bdd')</script>
+		<script src="./libs/chai.js"></script>
+		<script src="./libs/mocha-clean.js"></script>
+		<script>mocha.traceIgnores = ['mocha.js', 'chai.js', 'testCg3d.js']</script>
+		<script>var assert = chai.assert; </script>
+		<script src="./libs/sinon.js"></script>
+	</head>
+	<body>
+		<div id="mocha"></div>
+		<script src="../cg3d.js"></script>
+		<script src="./testCg3d.js"></script>
+		<script>mocha.run();</script> 
+	</body>
+</html>
